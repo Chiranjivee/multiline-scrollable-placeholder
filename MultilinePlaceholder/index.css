@@ -1,0 +1,52 @@
+body {
+    background-color: black;
+}
+
+h1 {
+    margin-top: 50px;
+    color: orange;
+    text-align: center;
+}
+
+.textarea-placeholder {
+    position: relative;
+    background-color: transparent;
+    margin: auto;
+  }
+
+.textarea-placeholder > div {
+    position: absolute;
+    z-index: -1;
+    top: 0;
+    left: 0;
+    width: 460px;
+    height: 460px;
+    padding: 20px;
+    overflow-y: scroll;
+    font-family: 'HelveticaNeue-Light', 'Helvetica Neue Light', 'Helvetica Neue', Helvetica, Arial, 'Lucida Grande', sans-serif;
+    font-size: 30px;
+    font-weight: 300;
+    line-height: 36px;
+    color: #999;
+  }
+  
+  textarea {
+    width: 500px;
+    height: 500px;
+    padding: 20px 0 5px 20px;
+    font-size: 30px;
+    color: #fff;
+  }
+
+  .center {
+      margin:auto;
+      width: 500px;
+  }
+  
+  .trans {
+    background-color: transparent;
+  }
+  
+  .data-edits {
+      background-color: #000;
+  }
