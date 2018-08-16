@@ -1,0 +1,42 @@
+<html>
+    <head>
+        <title>Multi-line place-holder demo</title>
+        <link rel="stylesheet" href="index.css">
+    </head>
+    <body>
+        <div ng-app="multiLinePlaceHolder" ng-controller="myCtrl">
+            <h1>Multi-line placeholder demo</h1>
+            <div class="center">
+                <div class="textarea-placeholder">
+                    <textarea 
+                        class="trans"
+                        ng-model="textAreaInput"
+                        ng-change="handleTextAreaEdit($event)"
+                        ng-keyup="handleTextAreaEdit($event)" 
+                        ng-paste="handleTextAreaEdit($event)"
+                        ng-wheel="mouseWheelHandler($event)">
+                    </textarea>
+                    <div id="uniq" ng-non-bindable>
+                        Multi-line Placeholder <br /> 
+                        Multi-line Placeholder <br />
+                        {{ Multi-line Placeholder }} <br />
+                        Multi-line {{ Multi-line Placeholder }} <br />
+                        {{ Multi-line Placeholder }}-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                        Multi-line Placeholder <br />
+                    </div>
+                </div>
+            </div>
+        </div>
+        <footer>
+            <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.9/angular.min.js"></script>
+            <script src="index.js"></script>
+        </footer>
+    </body>
+</html>
